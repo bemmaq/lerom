@@ -28,7 +28,9 @@ const Header = () => {
         </div>
 
         <div>
-          <img src={logo} alt="" />
+         <Link to={'/'}>
+         <img src={logo} alt="" />
+         </Link>
         </div>
 
         <div>
@@ -54,7 +56,7 @@ const Header = () => {
       </div>
 
       <div className="flex justify-between mt-10">
-        <div className="flex gap-2">
+        <div>
           <h3
             onClick={() => {
               setPopup(!popup);
@@ -63,7 +65,7 @@ const Header = () => {
             Каталог
           </h3>
           {popup && (
-            <div>
+            <div className="mt-[10px] leading-8">
               <Link to={'/new'}>
                 <p onClick={oppened}>Новинки</p>
               </Link>
@@ -75,7 +77,6 @@ const Header = () => {
               </Link>
             </div>
           )}
-          <span className="text-red-800 w-[10px]">&#9660;</span>
         </div>
         <div>
           <h2>О нас</h2>
