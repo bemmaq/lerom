@@ -112,11 +112,15 @@ const Header = () => {
         </div>
 
         <div className="hover:text-red-700 focus:text-red-700">
-          <h2>О нас</h2>
+          <Link to={"/about"}>
+            <h2>О нас</h2>
+          </Link>
         </div>
 
         <div className="hover:text-red-700 focus:text-red-700">
-          <h2>3D-моделирование</h2>
+          <Link to={"/modell"}>
+            <h2>3D-моделирование</h2>
+          </Link>
         </div>
 
         <div className="hover:text-red-700 focus:text-red-700">
